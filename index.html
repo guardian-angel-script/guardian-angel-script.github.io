@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guardian Angel Script – Auto Farm, ESP, God Mode & Teleport Roblox 2025</title>
+  <meta name="description" content="Download working Guardian Angel scripts with Auto Farm, ESP, God Mode, Auto Quest, Teleport, and Infinite Light. Keyless scripts for mobile & PC executors. Updated November 2025.">
+  <meta name="author" content="Guardian Angel Community">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://guardian-angel-script.github.io/">
+  <meta property="og:title" content="Guardian Angel Script">
+  <meta property="og:description" content="Best collection of Guardian Angel scripts with Auto Farm, ESP, God Mode, and more. Keyless & mobile-compatible.">
+  <meta property="og:url" content="https://guardian-angel-script.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guardian Angel Script Collection">
+  <meta name="twitter:description" content="Working scripts for Guardian Angel - Auto Farm, ESP, God Mode, and more!">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .subnav {
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:10px;
+    flex-wrap:wrap;
+  }
+  .subnav a {
+    padding:8px 14px;
+    background:linear-gradient(135deg, #2d3a52 0%, #1a2332 100%);
+    color:#ffd700;
+    text-decoration:none;
+    border-radius:10px;
+    border:3px solid #d4af37;
+    font-weight:700;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  }
+
+  .hero {
+    max-width:1100px;
+    margin: 18px auto;
+    padding:18px;
+    text-align:left;
+  }
+  .hero h1 { font-size:2rem; margin:0 0 6px; color:#ffd700; text-shadow: 2px 2px 0 #000; }
+  .hero p { margin:6px 0; line-height:1.45; color:#e8dcc0; }
+
+  .container {
+    max-width:1100px;
+    margin: 8px auto 40px;
+    padding: 0 12px;
+    display:grid;
+    gap:18px;
+    grid-template-columns: 1fr;
+  }
+
+  @media(min-width:900px){
+    .container { grid-template-columns: 1fr 360px; }
+  }
+
+  .card {
+    background: linear-gradient(180deg,#2d3a52 0%, #1a2738 100%);
+    padding:14px;
+    border-radius:12px;
+    border:4px solid #d4af37;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.4);
+    overflow:hidden;
+    word-wrap:break-word;
+    margin-bottom:16px;
+  }
+
+  .card h3 {
+    color:#ffd700;
+    text-shadow:2px 2px 0 #000;
+    margin-top:0;
+  }
+
+  .script-block {
+    background:#0a0e14;
+    color:#7ed957;
+    padding:12px;
+    border-radius:10px;
+    font-family: "Courier New", monospace;
+    font-size:0.92rem;
+    max-height:360px;
+    overflow:auto;
+    border:4px solid #d4af37;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    -webkit-overflow-scrolling: touch;
+    word-break:break-word;
+  }
+
+  @media (max-width:420px) {
+    .script-block {
+      max-height:240px;
+      font-size:0.88rem;
+      padding:10px;
+    }
+  }
+
+  .script-actions {
+    margin-top:10px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+
+  .btn-copy, .btn-download {
+    display:inline-block;
+    padding:10px 12px;
+    border-radius:10px;
+    background:linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+    color:#1a1a1a;
+    text-decoration:none;
+    border:3px solid #8b7355;
+    box-shadow:4px 4px 0 #b8860b;
+    font-weight:800;
+    cursor:pointer;
+    min-width:110px;
+    text-align:center;
+    text-shadow:1px 1px 0 rgba(255,255,255,0.3);
+  }
+
+  .btn-download {
+    background:linear-gradient(135deg, #4169e1 0%, #6495ed 100%);
+    color:#fff;
+    border:3px solid #2c4a8c;
+    box-shadow:4px 4px 0 #1e3a8a;
+    text-shadow:2px 2px 0 #000;
+  }
+
+  .small {
+    font-size:0.95rem;
+    color:#e8dcc0;
+  }
+
+  #toast {
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:24px;
+    background: linear-gradient(135deg, #2d3a52 0%, #1a2332 100%);
+    color:#ffd700;
+    padding:10px 16px;
+    border-radius:10px;
+    border:3px solid #d4af37;
+    display:none;
+    z-index:9999;
+    font-weight:800;
+    box-shadow:4px 4px 0 rgba(0,0,0,0.6);
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  @media (max-width:360px) {
+    .subnav a { padding:6px 10px; font-size:0.85rem; }
+    .hero h1 { font-size:1.4rem; }
+    .hero p { font-size:0.95rem; }
+    .btn-copy, .btn-download { min-width:90px; padding:8px 10px; font-size:0.9rem; }
+  }
+
+  .feature-table {
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0;
+    background:rgba(0,0,0,0.3);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  
+  .feature-table th {
+    background:linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+    color:#1a1a1a;
+    padding:10px;
+    text-align:left;
+    font-weight:800;
+    border-bottom:3px solid #8b7355;
+    text-shadow:1px 1px 0 rgba(255,255,255,0.3);
+  }
+  
+  .feature-table td {
+    padding:10px;
+    color:#e8dcc0;
+    border-bottom:1px solid rgba(212,175,55,0.1);
+  }
+  
+  .feature-table tr:last-child td {
+    border-bottom:none;
+  }
+
+  .warning-box {
+    background:#2d2318;
+    border:3px solid #ff8c00;
+    border-radius:10px;
+    padding:12px;
+    margin:12px 0;
+    color:#ffb347;
+    font-weight:700;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>👼 Guardian Angel</h1>
+    <h2>Scripts & Codes Hub</h2>
+    <div class="subnav" aria-label="site links">
+      <a href="/">Scripts</a>
+      <a href="codes.html">Codes</a>
+      <a href="sites.html">All Sites</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Guardian Angel Script Collection (100% Working)</h1>
+      <p>
+        Welcome to the ultimate Guardian Angel scripts hub! Discover the best and newest Roblox scripts featuring 
+        powerful automation tools like ESP, Auto Farm, God Mode, Super Fly, Speed boosts, Teleports, and much more. 
+        Guardian Angel is a thrilling Roblox experience where you protect allies, defeat enemies, and harness divine 
+        powers to survive dangerous encounters.
+      </p>
+      <p>
+        Each script below is fully functional, verified, and can be copied or downloaded as a `.lua` file for easy 
+        execution on both PC and Mobile. Whether you're looking for keyless scripts, undetected features, or premium 
+        automation tools, we've got everything you need to dominate Guardian Angel without any bans or issues.
+      </p>
+      <div class="warning-box">
+        ⚠️ <strong>Important:</strong> Use scripts responsibly and at your own risk. Test in private servers when 
+        possible to avoid detection. Excessive use in public servers may result in account warnings or bans. Always 
+        use trusted executors like Delta, Synapse X, KRNL, or Fluxus.
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <!-- Script 1 -->
+        <div class="card">
+          <h3>1. Guardian Angel Script – ESP</h3>
+          <p class="small">Enhanced ESP system allowing you to see all players and mobs through walls and textures on the map.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script1">loadstring(game:HttpGet("https://raw.githubusercontent.com/xt-el/ESP-Players/refs/heads/main/ESP"))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script1">Copy Script</button>
+            <button class="btn-download" data-target="script1" data-filename="guardian_angel_esp.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 2 -->
+        <div class="card">
+          <h3>2. Guardian Angel Script – Fly Hack</h3>
+          <p class="small">Enables flying ability to move freely through the skies and navigate the map effortlessly.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script2">loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Fly/refs/heads/main/Fly",true))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script2">Copy Script</button>
+            <button class="btn-download" data-target="script2" data-filename="guardian_angel_fly.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 3 -->
+        <div class="card">
+          <h3>3. Guardian Angel – ESP, Speed, Jump, Teleports</h3>
+          <p class="small">Multi-feature script with ESP, speed boost, high jump, and teleportation capabilities.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script3">loadstring(game:HttpGet("https://raw.githubusercontent.com/whatmyname111/by-Tw3ch1k_def/main/sab.lua", true))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script3">Copy Script</button>
+            <button class="btn-download" data-target="script3" data-filename="guardian_angel_multi.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 4 -->
+        <div class="card">
+          <h3>4. Guardian Angel – Auto Farm, Auto Quest, Teleport Shrines</h3>
+          <p class="small">Complete automation for quests, halo collection, and instant teleportation between shrine areas.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script4">loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/TuanAnhIOS/refs/heads/main/TuanAnhIOS-Main.Lua"))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script4">Copy Script</button>
+            <button class="btn-download" data-target="script4" data-filename="guardian_angel_auto_farm_quest.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 5 -->
+        <div class="card">
+          <h3>5. Vector Hub – Auto Farm, Auto Collect, Auto Blessing</h3>
+          <p class="small">Advanced GUI hub for farming halos, collecting divine energy, and performing blessings automatically.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script5">loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful/Vector_Hub/0/v2"))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script5">Copy Script</button>
+            <button class="btn-download" data-target="script5" data-filename="vector_hub.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 6 -->
+        <div class="card">
+          <h3>6. Deep Hub – Auto Farm, Auto Aura, Auto Complete</h3>
+          <p class="small">Auto-farm light fragments, activate combat auras, and complete shrine events instantly.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script6">loadstring(game:HttpGet("https://raw.githubusercontent.com/GoblinKun009/Script/refs/heads/main/Deep", true))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script6">Copy Script</button>
+            <button class="btn-download" data-target="script6" data-filename="deep_hub.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 7 -->
+        <div class="card">
+          <h3>7. Annie Hub – Auto Quest, Auto Farm, Infinite Light</h3>
+          <p class="small">Continuous farming, auto quest completion, and infinite light energy for all divine powers.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script7">loadstring(game:HttpGet('https://raw.githubusercontent.com/1st-Mars/Annie/main/1st.lua'))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script7">Copy Script</button>
+            <button class="btn-download" data-target="script7" data-filename="annie_hub.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 8 -->
+        <div class="card">
+          <h3>8. Foggy Hub – Auto Farm, Auto Bless, Auto Mastery</h3>
+          <p class="small">Gain mastery skills, perform automatic blessings, and farm halos efficiently without manual input.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script8">loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/foggy-bloxfruit/refs/heads/main/script"))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script8">Copy Script</button>
+            <button class="btn-download" data-target="script8" data-filename="foggy_hub.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 9 -->
+        <div class="card">
+          <h3>9. Teddy Hub – Auto Farm, Auto Quest, God Mode</h3>
+          <p class="small">Advanced GUI with auto-farming, quest completion, and God Mode for complete invincibility.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script9">repeat wait() until game:IsLoaded() and game.Players.LocalPlayer loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TeddyHub.lua"))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script9">Copy Script</button>
+            <button class="btn-download" data-target="script9" data-filename="teddy_hub.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 10 -->
+        <div class="card">
+          <h3>10. Xeter Hub – Auto Farm, Auto Skill, Auto Quest</h3>
+          <p class="small">Perform divine attacks automatically, farm halos nonstop, and complete tasks quickly.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script10">loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script10">Copy Script</button>
+            <button class="btn-download" data-target="script10" data-filename="xeter_hub.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 11 -->
+        <div class="card">
+          <h3>11. QuantumOnyx Hub – Auto Farm, Aimbot, Auto Collect</h3>
+          <p class="small">Advanced combat hub with efficient farming, auto-collection, and precise enemy targeting system.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#c5a8e0;">Script</h4>
+          <div class="script-block" id="script11">loadstring(game:HttpGet("https://pastebin.com/raw/PNBbCgUy", true))()</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script11">Copy Script</button>
+            <button class="btn-download" data-target="script11" data-filename="quantumonyx_hub.lua">Download .lua</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- right sidebar -->
+      <aside>
+        <div class="card">
+          <h3>What Is Guardian Angel Script?</h3>
+          <p class="small">
+            Guardian Angel script is a sophisticated Lua-based automation tool designed for the popular Roblox experience 
+            where you protect allies while surviving dangerous encounters. These scripts enhance your gaming experience by 
+            providing powerful features like ESP, Auto Farm, God Mode, and Teleportation.
+          </p>
+          <p class="small">
+            Once you activate the script using a trusted executor, it provides access to a custom GUI with advanced options 
+            that eliminate repetitive grinding and maximize your effectiveness. Master your abilities to guide and protect 
+            everyone from harm with ease.
+          </p>
+
+          <h3 style="margin-top:16px;">Key Features</h3>
+          <table class="feature-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Auto Farm</strong></td>
+                <td>Collects halos and light fragments automatically.</td>
+              </tr>
+              <tr>
+                <td><strong>Auto Quest</strong></td>
+                <td>Completes daily and event quests without input.</td>
+              </tr>
+              <tr>
+                <td><strong>God Mode</strong></td>
+                <td>Makes your angel immune to enemy damage.</td>
+              </tr>
+              <tr>
+                <td><strong>ESP System</strong></td>
+                <td>See players and mobs through textures on the map.</td>
+              </tr>
+              <tr>
+                <td><strong>Fly</strong></td>
+                <td>Lets you move freely through the skies.</td>
+              </tr>
+              <tr>
+                <td><strong>Teleport</strong></td>
+                <td>Instantly moves to shrines, quests, and portals.</td>
+              </tr>
+              <tr>
+                <td><strong>Infinite Light</strong></td>
+                <td>Gives endless light energy for skills and upgrades.</td>
+              </tr>
+              <tr>
+                <td><strong>No Key</strong></td>
+                <td>Loads instantly with no verification required.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>How To Use Guardian Angel Scripts</h3>
+          <p class="small">
+            Using scripts for Guardian Angel requires a Roblox executor. Follow these steps to activate powerful 
+            automation features and dominate the experience on both PC and Mobile.
+          </p>
+
+          <ol class="small" style="padding-left:20px;">
+            <li style="margin-bottom:8px;"><strong>Download Executor:</strong> Get Delta, Synapse X, KRNL, or Fluxus. Mobile: Delta iOS, Codex iOS, Fluxus Android. Disable antivirus if blocked.</li>
+            <li style="margin-bottom:8px;"><strong>Install & Setup:</strong> Complete installation and unlock with key if needed.</li>
+            <li style="margin-bottom:8px;"><strong>Launch Game:</strong> Open Roblox and join Guardian Angel experience.</li>
+            <li style="margin-bottom:8px;"><strong>Inject Executor:</strong> Click "Inject" or "Attach" to connect the executor.</li>
+            <li style="margin-bottom:8px;"><strong>Copy Script:</strong> Use the "Copy Script" button on any script above.</li>
+            <li style="margin-bottom:8px;"><strong>Execute:</strong> Paste script into executor and click "Execute" to activate instantly.</li>
+          </ol>
+
+          <div class="warning-box" style="margin-top:12px;">
+            ⚠️ Always test scripts in private servers first. Using scripts in public servers increases detection risk and may result in temporary bans.
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>Why Players Use These Scripts</h3>
+          
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Complete Tasks Faster</strong><br>
+            Scripts automate repetitive tasks like collecting halos, completing quests, and farming resources. What takes 
+            hours manually can be done in minutes with automation.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Competitive Advantage</strong><br>
+            Gain an edge with features like ESP to see enemies through walls, God Mode for invincibility, and Auto Farm 
+            to collect more resources than manual players.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Enhanced Gameplay</strong><br>
+            Focus on strategy and enjoyment rather than grinding. Scripts handle boring tasks automatically while you 
+            experience the best parts of Guardian Angel.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Mobile Compatible</strong><br>
+            Many scripts work perfectly on mobile devices. Use mobile executors to get the same powerful features on 
+            iOS and Android devices.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>Frequently Asked Questions</h3>
+          
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Q: Are Guardian Angel scripts safe to use?</strong><br>
+            Scripts from trusted sources are generally safe, but any script usage carries account risk. Always test in 
+            private servers and use scripts with anti-ban protection when available.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Q: Do I need keys for these scripts?</strong><br>
+            Most scripts listed above are keyless for instant access. They work immediately without verification, making 
+            them convenient and fast to use.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Q: Can I use scripts on mobile?</strong><br>
+            Yes! Many scripts are mobile-compatible. Use mobile executors like Delta iOS, Codex iOS, or Fluxus Android 
+            for iOS and Android devices.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Q: Which script is best for farming?</strong><br>
+            Scripts 4, 5, 6, 7, 8, and 10 are optimized for farming with auto-collection and resource gathering features. 
+            Try multiple scripts to find your favorite.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#b794f6;">Q: How do I avoid getting banned?</strong><br>
+            Test in private servers, use scripts with bypass features, avoid excessive automation in public servers, 
+            and don't use scripts 24/7. Moderate usage is key to staying undetected.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Guardian Angel Community — scripts shared by players. Not affiliated with Roblox.</p>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite">Copied!</div>
+
+  <script>
+    (function(){
+      const toast = document.getElementById('toast');
+
+      function showToast(msg='Copied!') {
+        toast.textContent = msg;
+        toast.style.display = 'block';
+        toast.style.opacity = '1';
+        clearTimeout(window._toastTimer);
+        window._toastTimer = setTimeout(()=>{
+          toast.style.opacity = '0';
+          setTimeout(()=> toast.style.display = 'none', 300);
+        }, 1600);
+      }
+
+      document.querySelectorAll('.btn-copy').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const targetId = btn.getAttribute('data-target');
+          const el = document.getElementById(targetId);
+          if(!el) return;
+          const text = el.textContent || el.innerText || '';
+          if(navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(()=>{
+              showToast('Script copied to clipboard');
+              const old = btn.textContent;
+              btn.textContent = 'Copied!';
+              setTimeout(()=> btn.textContent = old, 1200);
+            }).catch(()=> fallbackCopy(text));
+          } else {
+            fallbackCopy(text);
+          }
+
+          function fallbackCopy(txt){
+            const ta = document.createElement('textarea');
+            ta.value = txt;
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+              document.execCommand('copy');
+              showToast('Script copied to clipboard');
+            } catch(e) {
+              showToast('Copy failed — select manually');
+            }
+            document.body.removeChild(ta);
+          }
+        });
+      });
+
+      document.querySelectorAll('.btn-download').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const targetId = btn.getAttribute('data-target');
+          const filename = btn.getAttribute('data-filename') || 'script.lua';
+          const el = document.getElementById(targetId);
+          if(!el) return;
+          const text = el.textContent || el.innerText || '';
+          const blob = new Blob([text], {type: 'text/plain;charset=utf-8'});
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(()=>{
+            URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+          }, 250);
+          showToast('Download started: ' + filename);
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
